@@ -22,6 +22,7 @@ If the commit reverts a previous commit, it should begin with `revert: `, follow
 Must be one of the following:
 
 * **build**: Changes that affect the build system or external dependencies
+* **content**: Changes in content of static files (.json data, images, etc)
 * **ci**: Changes to our CI configuration files and scripts
 * **docs**: Documentation only changes
 * **feature**: A new feature
