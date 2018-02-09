@@ -7,7 +7,7 @@ format that includes a **type** and a **subject**:
 ```
 <type>: <subject>
 <BLANK LINE>
-<footer>
+<body>
 ```
 
 The **header** is mandatory.
