@@ -1,4 +1,4 @@
-# Guia para mensagens de commits e MR
+# Guia para mensagens de commits
 
 ## Formato da mensagem
 
