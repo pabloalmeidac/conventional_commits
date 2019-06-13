@@ -1,44 +1,79 @@
-# Commit Message Guidelines
+# Guia para mensagens de commits e MR
 
-## Commit Message Format
-Each commit message consists of a **header** and a **body**.  The header has a special
-format that includes a **type** and a **subject**:
+## Formato da mensagem
+
+Cada mensagem de commit consiste em um **cabeçalho**, um **corpo** e um **rodapé**. 
+
+## Cabeçalho
+
+Tem um formato pré-definido, que inclui um **tipo** e um **título**:
 
 ```
-<type>: <subject>
-<BLANK LINE>
-<body>
+<tipo>([escopo opcional]): <título>
+
+[corpo opcional]
+
+[rodapé opcional]
 ```
 
-The **header** is mandatory.
+O **cabeçalho** é obrigatório.
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on GitHub as well as in various git tools.
+Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim fica mais fácil para ler no GitHub, Gitlab e outras ferramentas de git.
 
-## Revert
-If the commit reverts a previous commit, it should begin with `revert: `, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
 
-## Type
-Must be one of the following:
+### Tipo
 
-* **build**: Changes that affect the build system or external dependencies
-* **content**: Changes in content of static files (.json data, images, etc)
-* **ci**: Changes to our CI configuration files and scripts
-* **docs**: Documentation only changes
-* **feature**: A new feature
-* **fix**: A bug fix
-* **performance**: A code change that improves performance
-* **refactor**: A code change that neither fixes a bug nor adds a feature
-* **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
-  semi-colons, etc)
-* **test**: Adding missing tests or correcting existing tests
+Deve ser um dos seguintes:
 
-## Subject
-The subject contains succinct description of the change:
+* **build**: alterações que afetam o sistema de build ou dependências externas
+* **static**: alterações no conteúdo de arquivos estáticos (dados .json, imagens, etc)
+* **ci**: Alterações em nossos arquivos e scripts de configuração de CI
+* **cd**: Alterações em nossos arquivos e scripts de configuração para CD
+* **docs**: somente alterações na documentação
+* **feat**: um novo recurso
+* **fix**: uma correção de bug
+* **perf**: uma alteração de código que melhora o desempenho
+* **refactor**: uma alteração de código que não corrige um bug nem adiciona um recurso
+* **improve**: alguma alteração de código que melhore o comportamento de um recurso
+* **style**: alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc)
+* **test**: Adicionando testes ausentes ou corrigindo testes existentes
+* **revert**: reverter para um commit anterior
 
-* use the imperative, present tense: "change" not "changed" nor "changes"
-* don't capitalize first letter
-* no dot (.) at the end
+### Título
 
-## Body
-The body should is the place to reference GitHub issues that this commit **Closes**.
+O título contém uma descrição sucinta da mudança:
+
+* use o imperativo, tempo presente: "mudança" não "mudou" nem "muda"
+* não capitalize a primeira letra
+* sem ponto (.) no final
+
+## Corpo
+
+Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fornecendo informações contextuais adicionais sobre as alterações no código. 
+
+Configure a mensagem com um wrap de 80 caracteres
+
+Use para explicar "o que" e "porque" foi realizado essa modificação, ao invez de "como".
+
+O corpo DEVE começar depois de uma linha em branco após a descrição.
+
+## Rodapé
+
+Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. 
+
+Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`
+
+## Reverter um commit
+Se o commit reverte um commit anterior, ele deve começar por `revert:`, seguido pelo cabeçalho do commit revertido. 
+
+No corpo, ele deve dizer: `Isso reverte o commit <hash> .`, onde o hash é o SHA do commit sendo revertido.
+
+## Porquê?
+
+* Criação automatizada de CHANGELOGs
+* Determinar automaticamente um aumento de versionamento semântico (com base nos tipos de commits)
+* Comunicar a natureza das mudanças para colegas de equipe, o público e outras partes interessadas de forma padronizada
+* Disparar processos de build e deploy
+* Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade
+
+#### Referência: [Conventional Commits](https://www.conventionalcommits.org/pt-br/)
