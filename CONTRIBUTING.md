@@ -9,11 +9,11 @@ Cada mensagem de commit consiste em um **cabeçalho**, um **corpo** e um **rodap
 Tem um formato pré-definido, que inclui um **tipo** e um **título**:
 
 ```
-<tipo>([escopo opcional]): <título>
+<tipo>(escopo opcional): <título>
 
-[corpo opcional]
+corpo opcional
 
-[rodapé opcional]
+rodapé opcional
 ```
 
 O **cabeçalho** é obrigatório.
