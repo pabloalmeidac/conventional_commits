@@ -14,6 +14,11 @@ Tem um formato pré-definido, que inclui um **tipo** e um **título**:
 <corpo opcional>
 
 <rodapé opcional>
+
+Exemplos:
+fix(integracao-erp): xxxxxxx
+improve(app-toolbox): xxxxxxx
+docs: Instruções de iniciar projeto com docker
 ```
 
 O **cabeçalho** é obrigatório.
