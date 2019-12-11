@@ -36,7 +36,7 @@ Deve ser um dos seguintes:
 * **cd**: Alterações em nossos arquivos e scripts de configuração para CD
 * **docs**: somente alterações na documentação
 * **feat**: um novo recurso
-* **fix**: uma correção de bug
+* **fix**: uma correção de bug da aplicação
 * **perf**: uma alteração de código que melhora o desempenho
 * **refactor**: uma alteração de código que não corrige um bug nem adiciona um recurso
 * **improve**: alguma alteração de código que melhore o comportamento de um recurso
