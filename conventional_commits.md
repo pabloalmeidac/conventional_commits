@@ -32,8 +32,8 @@ Deve ser um dos seguintes:
 
 * **build**: alterações que afetam o sistema de build ou dependências externas
 * **static**: alterações no conteúdo de arquivos estáticos (dados .json, imagens, etc)
-* **ci**: Alterações em nossos arquivos e scripts de configuração de CI
-* **cd**: Alterações em nossos arquivos e scripts de configuração para CD
+* **ci**: alterações em nossos arquivos e scripts de configuração de CI
+* **cd**: alterações em nossos arquivos e scripts de configuração para CD
 * **docs**: somente alterações na documentação
 * **feat**: um novo recurso
 * **fix**: uma correção de bug da aplicação
@@ -41,7 +41,7 @@ Deve ser um dos seguintes:
 * **refactor**: alteração de código, que não corrige um bug e nem altera a forma como o usuário utiliza a aplicação
 * **improve**: alguma alteração de código que melhore o comportamento de um recurso
 * **style**: alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc)
-* **test**: Adicionando testes ausentes ou corrigindo testes existentes
+* **test**: adicionando testes ausentes ou corrigindo testes existentes
 * **revert**: reverter para um commit anterior
 
 ### Título
