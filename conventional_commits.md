@@ -37,8 +37,8 @@ Deve ser um dos seguintes:
 * **docs**: somente alterações na documentação
 * **feat**: um novo recurso
 * **fix**: uma correção de bug da aplicação
-* **perf**: uma alteração de código que melhora o desempenho
-* **refactor**: uma alteração de código que não corrige um bug nem adiciona um recurso
+* **perf**: alteração de código que melhora o desempenho da aplicação e não altera a forma como o usuário utiliza a aplicação
+* **refactor**: alteração de código, que não corrige um bug e nem altera a forma como o usuário utiliza a aplicação
 * **improve**: alguma alteração de código que melhore o comportamento de um recurso
 * **style**: alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc)
 * **test**: Adicionando testes ausentes ou corrigindo testes existentes
